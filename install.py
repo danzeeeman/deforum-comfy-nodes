@@ -212,7 +212,7 @@ def install_stable_fast():
     python_version = f"{sys.version_info.major}{sys.version_info.minor}"
     os_name = platform.system()
     wheel_name = construct_wheel_name(cuda_version, python_version, os_name)
-    url = f"https://github.com/chengzeyi/stable-fast/releases/download/v1.0.4/{wheel_name}"
+    url = f"https://github.com/chengzeyi/stable-fast/releases/download/v1.0.5/stable_fast-1.0.5+torch222cu121-cp310-cp310-manylinux2014_x86_64.whl"
     print(f"Attempting to install: {wheel_name}")
     subprocess.run([sys.executable, "-m", "pip", "install", url])
 
